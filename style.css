@@ -1,1 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+}
+
+body{
+    --bg-size: 400%;
+    --color-one: #583DFC;
+    --color-two: #F33C3C;
+    background: linear-gradient(
+                  135deg,
+                  var(--color-one),
+                  var(--color-two),
+                  var(--color-one)
+                ) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: move-bg 30s infinite linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+      animation: move-bg 20s linear infinite;
+    }
+
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+        }
+    }
+}
