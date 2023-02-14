@@ -16,6 +16,14 @@
     flex-direction: column;
 }
 
+img{
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+
 p.gradient{
     color: white;
     --bg-size: 400%;
@@ -62,6 +70,11 @@ p{
 @media (max-width: 800px) {
     p{
         width: 90%;
+    }
+
+    img{
+        width: 20rem;
+        height: 30rem;
     }
 }
 
